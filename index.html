@@ -29,16 +29,16 @@
         </div>
 
         <div class="hero">
-            <img src="astro.png" >
+            <img src="astro.png" id="astro" >
            
         
         </div>
         <div class="text">
-            <h1>
+            <h1 id="abhas">
                 Hello, I am Abhas
             </h1>
-            <p>A passionate designer and developer from India.</p>
-            <p>Here we make quality websites <br>and apis</p>
+            <p class="para">A passionate designer and developer from India.</p>
+            <p class="para2">Here we make quality websites <br>and apis</p>
         </div>
         <div class="btn">
             <a href="https://www.linkedin.com/in/abhas101/">
@@ -105,7 +105,7 @@
         <h3>About</h3>
         <center><div class="line"></center>
         <div class="about-section">
-            <img src="about.png" alt="">
+            <img src="about.png" id="myPic">
             <p>We make awsome quality websites<br>by using most
              trending technology.</p>
             <p>
@@ -141,7 +141,7 @@
 </div>
         <center><div class="projects">
             <div class="project1">
-                <img src="project1.jpg" alt="">
+                <img src="project1.jpg" id="project1_img">
             </div>
             <div class="project-desc">
                 <h3>Modern Website Design</h3>
@@ -157,7 +157,7 @@
 
 <center> <div class="projects">
             <div class="project1">
-                <img src="project2.jpg" alt="">
+                <img src="project2.jpg" id="project2_img">
             </div>
             <div class="project-desc">
                 <h3>Ui/Ux design</h3>
@@ -180,5 +180,24 @@
     </div>
     </footer>
     <center class="rights"><p style="color: black;">All rights reserved</p></center>
+    <script> 
+    const astro = document.getElementById('astro');
+const abhas = document.getElementById('abhas');
+const para = document.querySelector('.para');
+const navbar = document.querySelector('.navbar');
+const mainpage = document.querySelector('.main-page');
+const project1_img = document.getElementById('project1_img');
+const project2_img = document.getElementById('project2_img');
+
+window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    astro.style.top=  value * .3 + 'px';
+    abhas.style.right = value*.2+'px';
+    para.style.left = value*.2+'px';
+
+    project1_img.style.paddingTop= value *.04  + 'px';
+    project2_img.style.paddingTop= value *.04  + 'px';
+})
+    </script>
 </body>
 </html>
