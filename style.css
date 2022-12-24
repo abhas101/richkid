@@ -162,11 +162,6 @@ button:hover{
 }
 
 
-.hero object{
-    width: 2rem;
-    background-color: transparent;
-    color: aliceblue;
-}
 
 @keyframes mover {
     0% { transform: translateY(0); }
