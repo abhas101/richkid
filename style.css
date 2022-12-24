@@ -72,7 +72,7 @@ html {
 
 }
 
-.hero img{
+.hero .astrogif{
     width:15rem;
     margin-bottom: 0;
     animation:  mover 1s infinite  alternate;
